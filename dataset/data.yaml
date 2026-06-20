@@ -1,0 +1,13 @@
+train: c:/Users/vaish/Vio-Lens/dataset/train/images
+val: c:/Users/vaish/Vio-Lens/dataset/valid/images
+test: c:/Users/vaish/Vio-Lens/dataset/test/images
+
+nc: 19
+names: ['auto', 'bicycle', 'bicycle-rider', 'bus', 'car', 'cattle', 'helmet', 'license_plate', 'lorry', 'motorbike', 'motorbike-rider', 'no_helmet', 'person', 'rickshow', 'scooty', 'scooty-rider', 'tractor', 'truck', 'vendor']
+
+roboflow:
+  workspace: objectdetection-xf7fl
+  project: vehicles-pnvsh
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/objectdetection-xf7fl/vehicles-pnvsh/dataset/3
