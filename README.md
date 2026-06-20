@@ -13,7 +13,7 @@ Vio-Lens is a full-stack, AI-driven traffic surveillance application designed to
 
 ## ✨ Features
 
-- **Custom YOLOv8 Vision Model:** Trained specifically on Indian traffic datasets to detect 19 unique classes (Auto, Bicycle, Bus, Car, Cattle, Helmet, License Plate, Lorry, Motorbike, Motorbike-Rider, No-Helmet, Person, Rickshaw, Scooty, Scooty-Rider, Tractor, Truck, Vendor).
+- **Custom YOLOv8 Vision Model:** Trained specifically on Indian traffic datasets.
 - **Automated Violation Detection:** Accurately identifies:
   - ❌ Helmet Non-compliance (No Helmet)
   - 🏍️ Triple Riding
