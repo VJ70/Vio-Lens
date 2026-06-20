@@ -6,6 +6,7 @@ WORKDIR /app
 
 # Install system dependencies required by OpenCV and EasyOCR
 RUN apt-get update && apt-get install -y \
+    libgl1 \
     libglib2.0-0 \
     libsm6 \
     libxext6 \
@@ -25,10 +26,8 @@ RUN mkdir -p /app/models
 # Copy the rest of the backend application code
 COPY . .
 
-# Expose port 8000
-EXPOSE 8000
+# Expose port 7860 (Hugging Face Spaces requirement)
+EXPOSE 7860
 
-# Command to run the application using Uvicorn
-# Render and HuggingFace pass the port via the $PORT environment variable, 
-# but we default to 8000 if it's not set.
-CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+# Command to run the application using Uvicorn on port 7860
+CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port 7860"]

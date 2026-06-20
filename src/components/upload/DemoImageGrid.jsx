@@ -7,8 +7,7 @@ const DEMOS = [
   { file: "mumbai-highway.jpg", label: "Mumbai Highway" },
   { file: "bangalore-signal.jpg", label: "Bangalore Signal" },
   { file: "triple-riding.jpg", label: "Triple Riding" },
-  { file: "no-helmet.jpg", label: "No Helmet" },
-  { file: "illegal-parking.jpg", label: "Illegal Parking" }
+  { file: "no-helmet.jpg", label: "No Helmet" }
 ];
 
 export default function DemoImageGrid() {
